@@ -38,9 +38,20 @@ body {
 
 #help {
     text-align: center;
+    padding-top: 40px;
 }
 
 #help p {
     font-size: 36px;
     line-height: 36px;
+}
+
+#questions {
+    display: none;
+}
+
+#questions p {
+    text-align: center;
+    font-size: 24px;
+    line-height: 24px;
 }
