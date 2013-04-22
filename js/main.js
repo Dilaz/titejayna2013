@@ -1,3 +1,8 @@
 jQuery(document).ready(function($) {
-    // TODO
+    $('#continue').click(function() {
+        $('#help').fadeOut('slow', function() {
+            $('#questions').fadeIn('slow');
+        });
+    });
 });
+
