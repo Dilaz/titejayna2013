@@ -1,4 +1,6 @@
 jQuery(document).ready(function($) {
+    var questionNumber = 0;
+
     // Load questions
     $.getJSON('questions.json', function(data) {
         // Loop all questions
@@ -12,7 +14,7 @@ jQuery(document).ready(function($) {
             // Create element for the question
             var element = $('<article></article>')
                 .addClass('question')
-                .attr('data-number', i + 1)
+                .attr('id', 'question-' + i.toString())
                 .append($('<figure></figure>')
                 .append($('<img />').attr('src', img)))
                 .append($('<p></p>').text(question))
@@ -26,8 +28,22 @@ jQuery(document).ready(function($) {
             // Add question to DOM
             element.appendTo('#questions');
         }
+        $('.question .buttonbox .button').click(function() {
+            $('#question-' + questionNumber).fadeOut('slow', function() {
+                // Next question
+                questionNumber += 1;
+                var next = $('#question-' + questionNumber);
+                if (next.length != 0) {
+                    next.fadeIn('slow');
+                }
+                else {
+                    // Show end screen
+                    $('#end').fadeIn('slow');
+                }
+            });
+        });
     }).fail(function() {
-        //alert('error');
+       // TODO
     });
 
     // Click event to start the "slideshow"
@@ -36,5 +52,6 @@ jQuery(document).ready(function($) {
             $('#questions').fadeIn('slow');
         });
     });
+
 });
 
