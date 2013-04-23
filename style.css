@@ -91,3 +91,25 @@ figure {
     font-size: 36px;
     line-height: 36px;
 }
+
+#end .end {
+    clear: both;
+}
+
+#end .end figure {
+    float: left;
+}
+
+#end .end img {
+    width: 100px;
+    height: auto;
+}
+
+#end .end .answers {
+    width: 600px;
+    float: left;
+    margin-left: 20px;
+}
+
+
+
