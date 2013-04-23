@@ -10,6 +10,17 @@ body {
     margin: 0 auto;
 }
 
+img {
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -o-border-radius: 30px;
+    border-radius: 30px;
+}
+
+figure {
+    text-align: center;
+}
+
 .buttonbox {
     width: 100%;
     text-align: center;
