@@ -2,6 +2,7 @@
     {
         "img": "gfx/Titejayna2012 003.JPG",
         "question": "Saako tältä kaistalta kääntyä oikealle?",
+        "correct": 0,
         "answers": [
             "Kyllä",
             "Ei"
@@ -10,6 +11,7 @@
     {
         "img": "gfx/Titejayna2012 005.JPG",
         "question": "Saanko jatkaa suoraan pysähtymättä?",
+        "correct": 1,
         "answers": [
             "Kyllä",
             "Ei"
@@ -18,6 +20,7 @@
     {
         "img": "gfx/Titejayna2012 007.JPG",
         "question": "Saanko kääntyä oikealle?",
+        "correct": 0,
         "answers": [
             "Kyllä",
             "Ei"
@@ -26,6 +29,7 @@
     {
         "img": "gfx/Titejayna2012 009.JPG",
         "question": "Saanko ohittaa valkoisen auton?",
+        "correct": 0,
         "answers": [
             "Kyllä",
             "Ei"
@@ -34,6 +38,7 @@
     {
         "img": "gfx/Titejayna2012 010.JPG",
         "question": "Saanko ohittaa mopoilijat?",
+        "correct": 0,
         "answers": [
             "Kyllä",
             "Ei"
@@ -42,6 +47,7 @@
     {
         "img": "gfx/Titejayna2012 012.JPG",
         "question": "Saako tästä kääntyä vasemmalle?",
+        "correct": 1,
         "answers": [
             "Kyllä",
             "Ei"
@@ -50,6 +56,7 @@
     {
         "img": "gfx/Titejayna2012 014.JPG",
         "question": "Saanko ajaa suoraan pysähtymättä?",
+        "correct": 1,
         "answers": [
             "Kyllä",
             "Ei"
@@ -58,6 +65,7 @@
     {
         "img": "gfx/Titejayna2012 020.JPG",
         "question": "Saanko ohittaa edessä ajavan?",
+        "correct": 1,
         "answers": [
             "Kyllä",
             "Ei"
@@ -66,6 +74,7 @@
     {
         "img": "gfx/Titejayna2012 035.JPG",
         "question": "Onko peräkärry merkitty oikein?",
+        "correct": 1,
         "answers": [
             "Kyllä",
             "Ei"
@@ -74,6 +83,7 @@
     {
         "img": "gfx/Titejayna2012 044.JPG",
         "question": "Saanko ohittaa edellä ajavan auton?",
+        "correct": 1,
         "answers": [
             "Kyllä",
             "Ei"
@@ -82,6 +92,7 @@
     {
         "img": "gfx/Titejayna2012 089.JPG",
         "question": "Välähtikö kamera?",
+        "correct": 1,
         "answers": [
             "Kyllä",
             "Ei"
@@ -90,6 +101,7 @@
     {
         "img": "gfx/Titejayna2012 045.JPG",
         "question": "Onko tästä kohtaa järkevintä kääntyä:",
+        "correct": 0,
         "answers": [
             "Vasemmalle",
             "Oikealle"
@@ -98,6 +110,7 @@
     {
         "img": "gfx/Titejayna2012 048.JPG",
         "question": "Voinko pysyä tällä kaistalla?",
+        "correct": 0,
         "answers": [
             "Kyllä",
             "Ei"
@@ -106,6 +119,7 @@
     {
         "img": "gfx/Titejayna2012 049.JPG",
         "question": "Ajanko ylinopeutta?",
+        "correct": 1,
         "answers": [
             "Kyllä",
             "Kyllä, mutten voi saada sakkoa",
@@ -115,6 +129,7 @@
     {
         "img": "gfx/Titejayna2012 089_2.JPG",
         "question": "Välähtikö kamera?",
+        "correct": 0,
         "answers": [
             "Kyllä",
             "Ei"
@@ -122,7 +137,8 @@
     },
     {
         "img": "gfx/Titejayna2012 003.JPG",
-        "question": "Saako tältä kaistalta kääntyä oikealle?",
+        "question": "Eikös tämä kuva ollut jo?",
+        "correct": 1,
         "answers": [
             "Kyllä",
             "Ei"
