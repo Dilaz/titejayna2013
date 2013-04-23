@@ -112,11 +112,20 @@ figure {
 
 #end .end figure {
     float: left;
+    position: relative;
 }
 
 #end .end img {
     width: 200px;
     height: auto;
+}
+
+#end .end img.large {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 800px;
+    z-index: 99;
 }
 
 #end .end .answers {
