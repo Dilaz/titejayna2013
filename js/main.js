@@ -13,6 +13,7 @@ jQuery(document).ready(function($) {
             var img = data[i].img;
             var question = data[i].question;
             var answers = data[i].answers;
+            var correct = data[i].correct;
 
 
             // Create element for the question
@@ -24,13 +25,34 @@ jQuery(document).ready(function($) {
                 .append($('<p></p>').text(question))
                 .append($('<div></div>').addClass('buttonbox'));
 
+            // Create element for the end-screen
+            var end = $('<article></article>')
+                .addClass('end')
+                .attr('id', 'question-' + i.toString())
+                .append($('<figure></figure>')
+                .append($('<img />').attr('src', img)))
+                .append($('<div></div>').addClass('answers')
+                .append($('<p></p>').text(question))
+                .append($('<ul></ul>')));
+
             // Create elements for the answers
             for (var j = 0; j < answers.length; j++) {
                 element.find('.buttonbox').append($('<div></div>').addClass('button').text(answers[j]));
+                var listItem = $('<li></li>').text(answers[j]);
+                // Add class if this is correct answer
+                if (j == correct) {
+                    listItem.addClass('correct');
+                }
+
+                // Add answer to the list
+                end.find('.answers ul').append(listItem);;
             }
 
             // Add question to DOM
             element.appendTo('#questions');
+
+            // Add end-answers to DOM
+            end.appendTo('#end');
         }
         $('.question .buttonbox .button').click(function() {
             // Disable click event while fade is going
@@ -39,7 +61,9 @@ jQuery(document).ready(function($) {
             }
 
             // Save the answer
-            data.answer = $(this).index();
+            var answer = $(this).index();
+            $('#end .answers:eq(' + questionNumber + ') ul li:eq(' + answer + ')').addClass('answered');
+
             $('#question-' + questionNumber).fadeOut('slow', function() {
                 // Next question
                 questionNumber += 1;
