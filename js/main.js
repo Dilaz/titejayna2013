@@ -33,7 +33,8 @@ jQuery(document).ready(function($) {
                 .append($('<img />').attr('src', img)))
                 .append($('<div></div>').addClass('answers')
                 .append($('<p></p>').text(question))
-                .append($('<ul></ul>')));
+                .append($('<ul></ul>')))
+                .append($('<div></div>').addClass('clear'));
 
             // Create elements for the answers
             for (var j = 0; j < answers.length; j++) {
@@ -53,6 +54,7 @@ jQuery(document).ready(function($) {
 
             // Add end-answers to DOM
             end.appendTo('#end');
+            $('#end').append($('<hr />'));
         }
         $('.question .buttonbox .button').click(function() {
             // Disable click event while fade is going
