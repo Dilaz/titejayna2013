@@ -9,7 +9,7 @@ html,body {
 
 body {
     width: 960px;
-    margin: 0 auto;
+    margin: 10px auto 0 auto;
 }
 
 img {
@@ -19,9 +19,15 @@ img {
     border-radius: 30px;
 }
 
+p {
+    margin: 20px 0;
+}
+
 figure {
     text-align: center;
 }
+
+.clear { clear: both; }
 
 .buttonbox {
     width: 100%;
@@ -95,7 +101,13 @@ figure {
 }
 
 #end .end {
-    clear: both;
+    display: block;
+    margin: 20px 0;
+}
+
+#end .end p {
+    font-size: 24px;
+    line-height: 24px;
 }
 
 #end .end figure {
@@ -103,7 +115,7 @@ figure {
 }
 
 #end .end img {
-    width: 100px;
+    width: 200px;
     height: auto;
 }
 
@@ -114,4 +126,19 @@ figure {
 }
 
 
+#end .end li {
+    font-size: 24px;
+    line-height: 24px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -o-border-radius: 20px;
+    border-radius: 20px;
+}
+
+#end .end li.correct {
+    background-color: #99ff99;
+}
+#end .end li.answered {
+    text-decoration: underline;
+}
 
