@@ -1,8 +1,12 @@
 jQuery(document).ready(function($) {
+    function nextQuestion() {
+    }
     var questionNumber = 0;
+    var data;
 
     // Load questions
-    $.getJSON('questions.json', function(data) {
+    $.getJSON('questions.json', function(d) {
+        data = d;
         // Loop all questions
         for (var i = 0; i < data.length; i++) {
             // Get data to variables
@@ -29,6 +33,13 @@ jQuery(document).ready(function($) {
             element.appendTo('#questions');
         }
         $('.question .buttonbox .button').click(function() {
+            // Disable click event while fade is going
+            if ($(this).parent().parent().is(':animated')) {
+                return;
+            }
+
+            // Save the answer
+            data.answer = $(this).index();
             $('#question-' + questionNumber).fadeOut('slow', function() {
                 // Next question
                 questionNumber += 1;
@@ -43,7 +54,7 @@ jQuery(document).ready(function($) {
             });
         });
     }).fail(function() {
-       // TODO
+       
     });
 
     // Click event to start the "slideshow"
