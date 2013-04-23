@@ -79,6 +79,9 @@ jQuery(document).ready(function($) {
                 }
             });
         });
+        $('#end .end img').click(function() {
+            $(this).toggleClass('large');
+        });
     }).fail(function() {
        
     });
@@ -89,6 +92,7 @@ jQuery(document).ready(function($) {
             $('#questions').fadeIn('slow');
         });
     });
+
 
 });
 
