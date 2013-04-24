@@ -20,6 +20,9 @@ jQuery(document).ready(function($) {
             if (trollImg == null) {
                 trollImg = img;
             }
+            else {
+                console.log(trollImg);
+            }
 
 
             // Create element for the question
@@ -36,7 +39,7 @@ jQuery(document).ready(function($) {
                 .addClass('end')
                 .attr('id', 'question-' + i.toString())
                 .append($('<figure></figure>')
-                .append($('<img />').attr('src', img)))
+                .append($('<img />').attr('src', trollImg)))
                 .append($('<div></div>').addClass('answers')
                 .append($('<p></p>').text(question))
                 .append($('<ul></ul>')))
