@@ -14,6 +14,12 @@ jQuery(document).ready(function($) {
             var question = data[i].question;
             var answers = data[i].answers;
             var correct = data[i].correct;
+            var trollImg = data[i].trollImg;
+
+            // If trollimage is not definend, just use the default one
+            if (trollImg == null) {
+                trollImg = img;
+            }
 
 
             // Create element for the question
