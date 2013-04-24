@@ -18,6 +18,26 @@
         ]
     },
     {
+        "img": "gfx/Titejayna2012_027s.jpg",
+        "trollImg": "gfx/Titejayna2012_027es.jpg",
+        "question": "Saanko kääntyä oikealle?",
+        "correct": 1,
+        "answers": [
+            "Kyllä",
+            "Ei"
+        ]
+    },
+    {
+        "img": "gfx/Titejayna2012_024s.jpg",
+        "trollImg": "gfx/Titejayna2012_024es.jpg",
+        "question": "Voinko jatkaa suoraan pysähtymättä?",
+        "correct": 1,
+        "answers": [
+            "Kyllä",
+            "Ei"
+        ]
+    },
+    {
         "img": "gfx/Titejayna2012 007.JPG",
         "question": "Saanko kääntyä oikealle?",
         "correct": 0,
