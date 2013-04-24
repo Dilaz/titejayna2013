@@ -145,9 +145,12 @@ figure {
 }
 
 #end .end li.correct {
-    background-color: #99ff99;
+    background-color: #ff9999;
 }
 #end .end li.answered {
     text-decoration: underline;
+}
+#end .end li.correct.answered {
+    background-color: #99ff99;
 }
 
